@@ -1,0 +1,20 @@
+{
+  "name": "jobeats-secure-api",
+  "version": "1.0.0",
+  "description": "Secure API for JOBEATS856 music app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.504.0",
+    "@aws-sdk/s3-request-presigner": "^3.504.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "pg": "^8.11.3"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
