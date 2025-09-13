@@ -29,7 +29,7 @@ const pool = new Pool({
 const S3 = new S3Client({
   region: "auto",
   // IMPORTANT: You will need to replace <YOUR_ACCOUNT_ID> with your actual Cloudflare Account ID.
-  endpoint: `https://<YOUR_ACCOUNT_ID>.r2.cloudflarestorage.com`,
+  endpoint: `https://49f13a2af01648a298c0bc1cd1fc59a1.r2.cloudflarestorage.com`,
   credentials: {
     accessKeyId: process.env.R2_ACCESS_KEY_ID,
     secretAccessKey: process.env.R2_SECRET_ACCESS_KEY,
@@ -90,4 +90,5 @@ app.get('/api/songs/:id/stream', async (req, res) => {
 // Start the server
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
+
 });
